@@ -1,0 +1,37 @@
+{
+    "version": 2,
+    "functions": {
+        "api/index.php": { "runtime": "vercel-php@0.5.2" }
+    },
+    "routes": [
+        { "src": "/(.*)",  "dest": "/api/index.php" }
+    ],
+    "env": {
+        "APP_ENV": "production",
+        "APP_DEBUG": "true",
+        "APP_URL": "https://serverless.chatgan.com",
+
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie",
+
+        "DB_CONNECTION":"mysql",
+        "DB_HOST":"o2olb7w3xv09alub.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+        "DB_PORT":"3306",
+        "DB_DATABASE":"fam9rmyby7q7kfb0",
+        "DB_USERNAME":"aar67md1p9t64vgm",
+        "DB_PASSWORD":"pi125apf2qhjn8te",
+        "BROADCAST_DRIVER":"pusher",
+        "PUSHER_APP_ID":"1488831",
+        "PUSHER_APP_KEY":"0e6bc951287edaf9b7aa",
+        "PUSHER_APP_SECRET":"9061aeeda062ef6e221d",
+        "PUSHER_APP_CLUSTER":"ap1"
+    }
+}
